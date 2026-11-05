@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qazaq Time Travel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- БАСТЫ БЕТ -->
+    <section id="start-screen" class="screen active">
+
+        <div class="ornament">✦ ✦ ✦</div>
+
+        <div class="flag">🇰🇿</div>
+
+        <h1>QAZAQ<br>TIME TRAVEL</h1>
+
+        <h2>Қазақстан тарихына саяхат</h2>
+
+        <p class="intro">
+            Қазақстан тарихының маңызды кезеңдері арқылы
+            қызықты саяхатқа шығыңыз!
+        </p>
+
+        <p class="intro-small">
+            Сұрақтарға жауап беріңіз, ұпай жинаңыз
+            және тарихи біліміңізді тексеріңіз.
+        </p>
+
+        <button id="start-btn">
+            Саяхатты бастау 🚀
+        </button>
+
+        <!-- АВТОР -->
+        <div class="author">
+            Автор: <strong>Amangeldiyeva Aidana</strong>
+        </div>
+
+        <div class="ornament bottom">✦ ✦ ✦</div>
+
+    </section>
+
+
+    <!-- ОЙЫН БЕТІ -->
+    <section id="game-screen" class="screen">
+
+        <div class="game-header">
+
+            <div id="era">Қазақстан тарихы</div>
+
+            <div id="score">⭐ Ұпай: 0</div>
+
+        </div>
+
+
+        <!-- ПРОГРЕСС -->
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+
+        <!-- КАРТИНКА -->
+        <div class="image-container">
+
+            <img
+                id="era-image"
+                src="images/ancient.jpg"
+                alt="Қазақстан тарихы"
+            >
+
+        </div>
+
+
+        <!-- СҰРАҚ -->
+        <div class="question-box">
+
+            <div class="question-number">
+
+                СҰРАҚ
+
+                <span id="question-number">1</span>
+
+                /
+
+                <span id="total-questions">5</span>
+
+            </div>
+
+
+            <h2 id="question">
+                Сұрақ жүктелуде...
+            </h2>
+
+
+            <!-- ЖАУАПТАР -->
+            <div id="answers"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- НӘТИЖЕ -->
+    <section id="result-screen" class="screen">
+
+        <div class="trophy">🏆</div>
+
+        <h1>Саяхат аяқталды!</h1>
+
+        <div class="result-line"></div>
+
+        <h2 id="final-score"></h2>
+
+        <p id="result-message"></p>
+
+        <!-- КОНФЕТТИ ОСЫ ЖЕРГЕ ТҮСЕДІ -->
+        <div id="confetti-container"></div>
+
+        <button id="restart-btn">
+            Қайта ойнау 🔄
+        </button>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
